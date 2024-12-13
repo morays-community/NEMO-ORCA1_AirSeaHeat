@@ -1,60 +1,39 @@
-# Generic Experiment Name
+# AirSea_Heat
 
 `DOI:XXXXX.XXXXX`
 
-**Fill EXP.VAR directories as follows:**
-
-	- CONFIG : material for NEMO compilation
-	- INFERENCES : python and eophis material
-	- RUN : material for production
-	- POSTPROCESS : material for post-processing and plotting
-	- RES : some pertinent results
-
-**Replace `highligthed content` below to fill the README template**
-
 ## Context and Motivation
 
-`Description of the experiment`
+Purpose of this experiment is to correct the air-sea heat fluxes as a function of oceanic and atmospheric state predictors on a global ORCA1 config. More details about scientific can be found in [Storto et al. 2024](https://doi.org/10.5194/gmd-2024-185). Corrected heat fluxes are written in an output file with the NEMO ouput system (XIOS).
 
 #### Variations
-`- VAR0 : description of experiment variation VAR0`
-
-`- VAR1 : ...`
+- **ANN** : Air-sea fluxes correction computed with the Artificial Neural Network (ANN) proposed by [Storto et al. 2024](https://doi.org/10.5194/gmd-2024-185).
 
 ## Requirements
 
-**This part must list libraries versions and codes patches used to run the experiments and facilitates reproducibility.
-If one of the experiment variations needs a different software environment, please create another repository from this template.**
-
 ### Compilation
 
-- NEMO version : `[release](<commit_link>)`
+- NEMO version : [v4.2.1](https://forge.nemo-ocean.eu/nemo/nemo/-/releases/4.2.1) patched with [morays](https://github.com/morays-community/Patches-NEMO/tree/main/NEMO_v4.2.1) and local `CONFIG/src` sources.
 
-- `Code Compilation manager if used : [release](<commit_link>)`
-
-- `Customized sources : YES/NO`
+- Code Compilation manager : none, use standard `makenemo` script
 
 
 ### Python
 
-- Eophis version : `[release](<commit_link>)`
-- **VAR1** dependencies :
+- Eophis version : [v1.0.1](https://github.com/meom-group/eophis/releases/tag/v1.0.1)
+- **ANN** dependencies :
 	```bash
-	pip install -f /PATH/TO/requirements.txt`
-	```
-- **VAR2** dependencies: 
-	```bash
-	git clone ...
+	pip install -f AirSea_Heat.ANN/INFERENCES/requirements.txt`
 	```
 
 ### Run
 
-- `NEMO Production Manager if used : [release](<commit_link>)`
+- NEMO Production Manager : none, use submission script `job.ksh` in `RUN`
 
 
 ### Post-Process
 
-- `Post-Process libraries if used : [release](<commit_link>)`
-  
-- `Plotting libraries if used : [release](<commit_link>)`
+- No Post-Process libraries
+
+- Plotting : Python script `plots_res.py` in `POSTPROCESS`
 
