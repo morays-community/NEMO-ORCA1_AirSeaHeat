@@ -13,7 +13,7 @@ Purpose of this experiment is to correct the air-sea heat fluxes as a function o
 
 ### Compilation
 
-- NEMO version : [v4.2.1](https://forge.nemo-ocean.eu/nemo/nemo/-/releases/4.2.1) patched with [morays](https://github.com/morays-community/Patches-NEMO/tree/main/NEMO_v4.2.1) and local `CONFIG/src` sources.
+- NEMO version : [v4.0.7](https://forge.ipsl.fr/nemo/browser/NEMO/releases/r4.0/r4.0.7) patched with [morays](https://github.com/morays-community/Patches-NEMO/tree/main/NEMO_v4.0.7) and local `CONFIG/src` sources.
 
 - Code Compilation manager : none, use standard `makenemo` script
 
