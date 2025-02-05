@@ -1,13 +1,13 @@
-# AirSea_Heat `WORK IN PROGRESS`
+# ORCA1_AirSeaHeat `WORK IN PROGRESS`
 
 `DOI:XXXXX.XXXXX`
 
 ## Context and Motivation
 
-Purpose of this experiment is to correct the air-sea heat fluxes as a function of oceanic and atmospheric state predictors on a global ORCA1 config. More details about scientific can be found in [Storto et al. 2024](https://doi.org/10.5194/gmd-2024-185). Corrected heat fluxes are written in an output file with the NEMO ouput system (XIOS).
+Purpose of this experiment is to correct the air-sea heat fluxes as a function of oceanic and atmospheric state predictors on a global ORCA1 config. More details about scientific context can be found in [Storto et al. 2024](https://doi.org/10.5194/gmd-2024-185). Corrected heat fluxes are written in an output file with the NEMO ouput system (XIOS).
 
 #### Variations
-- **ANN** : Air-sea fluxes correction computed with the Artificial Neural Network (ANN) proposed by [Storto et al. 2024](https://doi.org/10.5194/gmd-2024-185).
+- **ANN** : Air-sea fluxes correction computed with Artificial Neural Network (ANN) proposed by [Storto et al. 2024](https://doi.org/10.5194/gmd-2024-185).
 
 ## Requirements
 
