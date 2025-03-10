@@ -13,14 +13,14 @@ def ocean_info():
     # coupling config
     tunnel_config = list()
     tunnel_config.append( { 'label' : 'TO_NEMO_FIELDS', \
-                            'grids' : { 'ORCA1' : {'npts' : (360,290), 'halos' : 0, 'bnd' : ('cyclic','cyclic') }  }, \
+                            'grids' : { 'ORCA1' : {'npts' : (362,292), 'halos' : 0, 'bnd' : ('cyclic','cyclic') }  }, \
                             'exchs' : [ {'freq' : step*freq_sbc, 'grd' : 'ORCA1', 'lvl' : 24, 'in' : ['zi1d'], 'out' : [] } , \
                                         {'freq' : step*freq_sbc, 'grd' : 'ORCA1', 'lvl' : 1,  'in' : [], 'out' : ['zo1d'] } ] }
                         )
                         
     # static coupling (manual send/receive)
     tunnel_config.append( { 'label' : 'TO_NEMO_METRICS', \
-                            'grids' : { 'ORCA1' : {'npts' : (360,290), 'halos' : 0, 'bnd' : ('cyclic','cyclic') }  }, \
+                            'grids' : { 'ORCA1' : {'npts' : (362,292), 'halos' : 0, 'bnd' : ('cyclic','cyclic') }  }, \
                             'exchs' : [ {'freq' : Freqs.STATIC, 'grd' : 'ORCA1', 'lvl' : 1, 'in' : ['tmsk'], 'out' : []} ] }
                         )
                         
