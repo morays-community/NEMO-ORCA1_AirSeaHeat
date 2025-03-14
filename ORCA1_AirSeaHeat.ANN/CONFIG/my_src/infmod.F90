@@ -175,7 +175,7 @@ CONTAINS
       zdata = 0.0_wp
       IF( ssnd(ntypinf,jps_zi1d)%laction ) THEN
          DO jj = 1, jpj
-            DO ji = 1, jpj
+            DO ji = 1, jpi
                IF( tmask(ji,jj,1) .GT. 0.5_wp ) THEN
                   kp = kp + 1
                   zdata(ji,jj,1:ssnd(ntypinf,jps_zi1d)%nlvl) = i1d(kp,:)
@@ -219,10 +219,10 @@ CONTAINS
       o1d = 0.0_wp
       IF( srcv(ntypinf,jpr_zo1d)%laction ) THEN
          DO jj = 1, jpj
-            DO ji = 1, jpj
+            DO ji = 1, jpi
                IF( tmask(ji,jj,1) .GT. 0.5_wp ) THEN
                   kp = kp + 1
-                  o1d(kp,1) = infrcv(jpr_zo1d)%z3(jj,ji,1)
+                  o1d(kp,1) = infrcv(jpr_zo1d)%z3(ji,jj,1)
                ENDIF
             ENDDO
          ENDDO
