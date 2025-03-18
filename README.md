@@ -7,7 +7,7 @@
 Purpose of this experiment is to correct the air-sea heat fluxes as a function of oceanic and atmospheric state predictors on a global ORCA1 config. More details about scientific context can be found in [Storto et al. 2024](https://doi.org/10.5194/gmd-2024-185). Corrected heat fluxes are written in an output file with the NEMO ouput system (XIOS).
 
 #### Variations
-- **S24** : Air-sea fluxes correction computed with Artificial Neural Network proposed by [Storto et al. 2024](https://doi.org/10.5194/gmd-2024-185).
+- **S24** : Air-Sea heat fluxes correction computed with Artificial Neural Network proposed by [Storto et al. 2024](https://doi.org/10.5194/gmd-2024-185).
 
 ## Requirements
 
