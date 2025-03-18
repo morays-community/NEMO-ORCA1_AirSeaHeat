@@ -1,7 +1,7 @@
 import numpy as np
 import tensorflow as tf
 
-model_path = '/lustre/fswork/projects/rech/cli/udp79td/local_libs/morays/NEMO-ORCA1_AirSeaHeat/ORCA1_AirSeaHeat.ANN/INFERENCES'
+model_path = '/lustre/fswork/projects/rech/cli/udp79td/local_libs/morays/NEMO-ORCA1_AirSeaHeat/ORCA1_AirSeaHeat.S24/INFERENCES'
 
 #       Utils 
 # -----------------
