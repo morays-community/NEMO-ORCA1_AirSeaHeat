@@ -1,6 +1,6 @@
 # ORCA1 Air-Sea Heat
 
-`DOI:XXXXX.XXXXX`
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15052861.svg)](https://doi.org/10.5281/zenodo.15052861)
 
 ## Context and Motivation
 
