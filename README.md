@@ -1,4 +1,4 @@
-# ORCA1 Air-Sea Heat `WORK IN PROGRESS`
+# ORCA1 Air-Sea Heat
 
 `DOI:XXXXX.XXXXX`
 
@@ -30,7 +30,7 @@ Purpose of this experiment is to correct the air-sea heat fluxes as a function o
 - Eophis version : [v1.0.1](https://github.com/meom-group/eophis/releases/tag/v1.0.1)
 - **S24** dependencies :
 	```bash
-	pip install -f ORCA1_AirSea_Heat.S24/INFERENCES/requirements.txt`
+	pip install -f ORCA1_AirSea_Heat.S24/INFERENCES/requirements.txt
 	```
 
 ### Run
@@ -42,5 +42,5 @@ Purpose of this experiment is to correct the air-sea heat fluxes as a function o
 
 - No Post-Process libraries
 
-- Plotting : Python script `plots_res.py` in `POSTPROCESS`
+- Plotting : Python scripts in `POSTPROCESS`
 
