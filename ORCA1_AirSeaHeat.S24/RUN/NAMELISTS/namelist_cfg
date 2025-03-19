@@ -34,7 +34,7 @@
 &namrun        !   parameters of the run
 !-----------------------------------------------------------------------
    nn_no       =  1                      !  Assimilation cycle index
-   cn_exp      = "ORCA1-AirSeaHeat.ANN"  !  experience name
+   cn_exp      = "ORCA1-AirSeaHeat.S24"  !  experience name
    nn_it000    =  1            !  first time step
    nn_itend    =  720          !  last  time step (std 5840)
    nn_date0    =  20100101     !  date at nit_0000 (format yyyymmdd) used if ln_rstart=F or (ln_rstart=T and nn_rstctl=0 or 1)
